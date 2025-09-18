@@ -3,20 +3,12 @@
   "configurations": [
     {
       "type": "java",
-      "name": "BJ1001",
-      "request": "launch",
-      "mainClass": "BJ1001",
-      "projectName": "CT_a64f724d"
-    },
-    {
-      "type": "java",
-      "name": "Run Current File (No Package)",
+      "name": "Run Java Current File",
       "request": "launch",
       "mainClass": "${fileBasenameNoExtension}",
       "classPaths": [
-        "out"
-      ],
-      "console": "integratedTerminal"
+        "${workspaceFolder}/out"
+      ]
     }
   ]
 }

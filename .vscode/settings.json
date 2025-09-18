@@ -1,7 +1,8 @@
 {
-  // 자바 컴파일 결과물(.class)을 저장할 위치
-  "java.project.outputPath": "./out",
-
-  // (선택) 실행 시 기본 working directory를 현재 파일이 있는 폴더로
-  "java.debug.settings.console": "integratedTerminal"
+  "java.project.outputPath": "out",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "debug.saveBeforeStart": "allEditorsInActiveGroup",
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.debug.settings.forceBuildBeforeLaunch": true,
+  "java.debug.settings.onBuildFailureProceed": false
 }
