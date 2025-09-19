@@ -5,13 +5,6 @@
       "type": "java",
       "name": "BJ2753",
       "request": "launch",
-      "mainClass": "BJ.bronze._5._2753.BJ2753",
-      "projectName": "CT_a64f724d"
-    },
-    {
-      "type": "java",
-      "name": "BJ2753",
-      "request": "launch",
       "mainClass": "BJ2753",
       "projectName": "CT_a64f724d"
     },

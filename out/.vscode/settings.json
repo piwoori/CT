@@ -1,0 +1,8 @@
+{
+  "java.project.outputPath": "out",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "debug.saveBeforeStart": "allEditorsInActiveGroup",
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.debug.settings.forceBuildBeforeLaunch": true,
+  "java.debug.settings.onBuildFailureProceed": false
+}
