@@ -17,13 +17,6 @@
     },
     {
       "type": "java",
-      "name": "BJ2753",
-      "request": "launch",
-      "mainClass": "BJ2753",
-      "projectName": "CT_a64f724d"
-    },
-    {
-      "type": "java",
       "name": "Run Java Current File",
       "request": "launch",
       "mainClass": "${fileBasenameNoExtension}",
