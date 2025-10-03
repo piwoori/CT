@@ -1,6 +1,6 @@
 # [level 0] 문자열 반복해서 출력하기 - 181950
 
-[문제 링크](https://www.acmicpc.net/problem/181950)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181950)
 
 ### 분류
 - 문자열 출력
