@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BJ2720",
+      "request": "launch",
+      "mainClass": "BJ.bronze._3._2720.BJ2720",
+      "projectName": "CT_a64f724d"
+    },
+    {
+      "type": "java",
       "name": "BJ2460",
       "request": "launch",
       "mainClass": "BJ.bronze._3._2460.BJ2460",
