@@ -1,4 +1,4 @@
-# [bronze 3] 주차의 신 - 5054
+# [bronze 2] 주차의 신 - 5054
 
 [문제 링크](https://www.acmicpc.net/problem/5054)
 
