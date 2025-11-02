@@ -1,4 +1,4 @@
-# [bronze 3] 알파벳 거리 - 5218
+# [bronze 2] 알파벳 거리 - 5218
 
 [문제 링크](https://www.acmicpc.net/problem/5218)
 

@@ -1,4 +1,4 @@
-# [bronze 3] 대표값 - 2592
+# [bronze 2] 대표값 - 2592
 
 [문제 링크](https://www.acmicpc.net/problem/2592)
 

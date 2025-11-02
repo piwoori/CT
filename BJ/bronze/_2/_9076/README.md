@@ -1,4 +1,4 @@
-# [bronze 3] 점수 집계 - 9076
+# [bronze 2] 점수 집계 - 9076
 
 [문제 링크](https://www.acmicpc.net/problem/9076)
 
