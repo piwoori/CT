@@ -1,17 +1,45 @@
+#######################################
+# IntelliJ IDEA
+#######################################
+/.idea/
+!/.idea/codeStyles/                # (필요하면 유지)
+!/.idea/inspectionProfiles/        # (필요하면 유지)
+
+# 워크스페이스 파일은 항상 무시
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf/
+
+#######################################
 # Java build files
+#######################################
 *.class
 /out/
 /bin/
+/target/                      # Maven / Gradle
 
+#######################################
 # Python cache
+#######################################
 __pycache__/
 *.pyc
 *.pyo
 
-# VSCode 개인 설정 (settings.json은 무시, launch.json은 유지하고 싶을 때)
+#######################################
+# VSCode (현재 VSCode 안 쓰지만 혹시 몰라 포함)
+#######################################
 .vscode/*
 !.vscode/launch.json
 
-# OS 생성 불필요 파일
+#######################################
+# OS-generated files
+#######################################
 .DS_Store
 Thumbs.db
+
+#######################################
+# Logs
+#######################################
+*.log
