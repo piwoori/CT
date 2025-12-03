@@ -8,7 +8,11 @@ __pycache__/
 *.pyc
 *.pyo
 
-# VSCode 개인 설정 (settings.json은 무시, launch.json은 유지하고 싶을 때)
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VSCode 개인 설정 (settings.json은 무시, launch.json은 유지)
 .vscode/*
 !.vscode/launch.json
 
