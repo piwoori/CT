@@ -1,9 +1,8 @@
 #######################################
 # IntelliJ IDEA
 #######################################
-/.idea/
-!/.idea/codeStyles/                # (필요하면 유지)
-!/.idea/inspectionProfiles/        # (필요하면 유지)
+.idea/
+*.iml
 
 # 워크스페이스 파일은 항상 무시
 .idea/workspace.xml
@@ -27,17 +26,9 @@ __pycache__/
 *.pyc
 *.pyo
 
-<<<<<<< HEAD
 #######################################
 # VSCode (현재 VSCode 안 쓰지만 혹시 몰라 포함)
 #######################################
-=======
-# IntelliJ IDEA
-.idea/
-*.iml
-
-# VSCode 개인 설정 (settings.json은 무시, launch.json은 유지)
->>>>>>> level0
 .vscode/*
 !.vscode/launch.json
 
@@ -45,13 +36,9 @@ __pycache__/
 # OS-generated files
 #######################################
 .DS_Store
-<<<<<<< HEAD
 Thumbs.db
 
 #######################################
 # Logs
 #######################################
 *.log
-=======
-Thumbs.db
->>>>>>> level0
