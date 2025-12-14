@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,7 +73,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;애플리케이션.BJ1032.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.BJ1427.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.BJ2751.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.BJ4659.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.BJ5800.executor&quot;: &quot;Run&quot;
   }
@@ -169,7 +168,7 @@
       <workItem from="1765251419216" duration="487000" />
       <workItem from="1765251961534" duration="25000" />
       <workItem from="1765251988851" duration="262000" />
-      <workItem from="1765608382220" duration="1486000" />
+      <workItem from="1765689558520" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add bronze1/Bj1032 solution">
       <option name="closed" value="true" />
