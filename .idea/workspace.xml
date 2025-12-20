@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="705e0eda-4ac7-4b7b-a0cb-9838831c5f93" name="변경" comment="feat: add level0/PG181892 solution" />
+    <list default="true" id="705e0eda-4ac7-4b7b-a0cb-9838831c5f93" name="변경" comment="feat: add level0/PG181892 solution">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,6 +168,8 @@
       <workItem from="1765251419216" duration="487000" />
       <workItem from="1765251961534" duration="25000" />
       <workItem from="1765251988851" duration="262000" />
+      <workItem from="1766146565479" duration="339000" />
+      <workItem from="1766232790814" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add bronze1/Bj1032 solution">
       <option name="closed" value="true" />
