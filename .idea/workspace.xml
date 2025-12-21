@@ -128,6 +128,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -168,8 +187,7 @@
       <workItem from="1765251419216" duration="487000" />
       <workItem from="1765251961534" duration="25000" />
       <workItem from="1765251988851" duration="262000" />
-      <workItem from="1766146565479" duration="339000" />
-      <workItem from="1766232790814" duration="373000" />
+      <workItem from="1766324703601" duration="533000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add bronze1/Bj1032 solution">
       <option name="closed" value="true" />
