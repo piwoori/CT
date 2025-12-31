@@ -73,6 +73,7 @@
     "vue.rearranger.settings.migration": "true",
     "애플리케이션.BJ1032.executor": "Run",
     "애플리케이션.BJ1427.executor": "Run",
+    "애플리케이션.BJ1436.executor": "Run",
     "애플리케이션.BJ2941.executor": "Run",
     "애플리케이션.BJ4659.executor": "Run",
     "애플리케이션.BJ5800.executor": "Run"
@@ -124,6 +125,7 @@
       <workItem from="1765251961534" duration="25000" />
       <workItem from="1765251988851" duration="262000" />
       <workItem from="1767071938287" duration="684000" />
+      <workItem from="1767188304195" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add bronze1/Bj1032 solution">
       <option name="closed" value="true" />
