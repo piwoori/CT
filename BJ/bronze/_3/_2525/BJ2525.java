@@ -13,11 +13,7 @@ public class BJ2525 {
         st = new StringTokenizer(br.readLine());
         int C = Integer.parseInt(st.nextToken());
 
-        int total = A * 60 + B + C;
-
-        if(total > 1440){
-            total -= 1440;
-        }
+        int total = (A * 60 + B + C) % 1440;
 
         A = total / 60;
         B = total % 60;
