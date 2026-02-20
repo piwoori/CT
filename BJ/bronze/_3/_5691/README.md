@@ -1,4 +1,4 @@
-# [bronze 3] 펴ㅇ균 중앙값 문제 - 5691
+# [bronze 3] 평균 중앙값 문제 - 5691
 
 [문제 링크](https://www.acmicpc.net/problem/5691)
 
