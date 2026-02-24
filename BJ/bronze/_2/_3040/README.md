@@ -1,4 +1,4 @@
-# [bronze 2] 백설 공주와 일곱 난쟁이- 3040
+# [bronze 2] 백설 공주와 일곱 난쟁이 - 3040
 
 [문제 링크](https://www.acmicpc.net/problem/3040)
 
