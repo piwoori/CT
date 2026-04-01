@@ -1,0 +1,13 @@
+package BJ.bronze._3._15894;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class BJ15894 {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        long N = Long.parseLong(br.readLine());
+
+        System.out.println(N * 4);
+    }
+}
