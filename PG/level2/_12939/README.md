@@ -1,4 +1,4 @@
-# [level1] 최댓값과 최솟값 - 12939
+# [level2] 최댓값과 최솟값 - 12939
 
 [문제 링크](https://www.acmicpc.net/problem/120939)
 
