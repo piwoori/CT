@@ -1,6 +1,6 @@
 # [level1] 약수의 합 - 12928
 
-[문제 링크](https://www.acmicpc.net/problem/120928)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120928)
 
 ### 분류
 - 약수

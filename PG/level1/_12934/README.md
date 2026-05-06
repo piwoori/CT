@@ -1,6 +1,6 @@
 # [level1] 정수 제곱근 판별 - 12934
 
-[문제 링크](https://www.acmicpc.net/problem/12943)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12943)
 
 ### 분류
 - 제곱근

@@ -1,6 +1,6 @@
 # [level1] 정수 내림차순으로 배치하기 - 12933
 
-[문제 링크](https://www.acmicpc.net/problem/120933)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120933)
 
 ### 분류
 - 정수

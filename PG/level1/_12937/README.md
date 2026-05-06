@@ -1,6 +1,6 @@
 # [level1] 짝수와 홀수 - 12937
 
-[문제 링크](https://www.acmicpc.net/problem/12937)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12937)
 
 ### 분류
 - 정수

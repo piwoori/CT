@@ -1,6 +1,6 @@
 # [level1] 자연수 뒤집어 배열로 만들기 - 12932
 
-[문제 링크](https://www.acmicpc.net/problem/120932)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120932)
 
 ### 분류
 - 정수
