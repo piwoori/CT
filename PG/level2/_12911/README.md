@@ -1,6 +1,6 @@
 # [level2] 다음 큰 숫자 - 12911
 
-[문제 링크](https://www.acmicpc.net/problem/12911)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12911)
 
 ### 분류
 - 조건문

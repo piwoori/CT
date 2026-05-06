@@ -1,6 +1,6 @@
 # [level2] 이진 변환 반복하기 - 70129
 
-[문제 링크](https://www.acmicpc.net/problem/70129)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70129)
 
 ### 분류
 - 이진법

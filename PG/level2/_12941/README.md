@@ -1,6 +1,6 @@
 # [level2] 최솟값 만들기 - 12941
 
-[문제 링크](https://www.acmicpc.net/problem/12941)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12941)
 
 ### 분류
 - 배열

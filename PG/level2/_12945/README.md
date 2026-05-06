@@ -1,6 +1,6 @@
 # [level2] 피보나치 수 - 12945
 
-[문제 링크](https://www.acmicpc.net/problem/12945)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12945)
 
 ### 분류
 - 피보나치
