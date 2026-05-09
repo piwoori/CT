@@ -1,4 +1,4 @@
-# [level2] 호텔 방 배정 - 64063
+# [level4] 호텔 방 배정 - 64063
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64063)
 
