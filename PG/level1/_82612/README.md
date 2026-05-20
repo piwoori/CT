@@ -16,5 +16,6 @@
 
 ### 풀이 아이디어
 - long 타입의 정수 변수 total을 (long) price * count * (count + 1) / 2로 초기화
+  - 등차수열 합 공식 사용
 - money >= total의 조건식을 만족하면 0 리턴
 - total - money 리턴
