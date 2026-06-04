@@ -4,7 +4,7 @@
 
 ### 분류
 - Set
-- ArratList
+- ArrayList
 
 ### 문제 요약
 - 정수 배열 numbers 매개변수
