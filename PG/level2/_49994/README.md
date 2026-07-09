@@ -39,4 +39,4 @@
     - set.add(reverse) 실행
   - x에 nx 대입
   - y에 ny 대입
-- set.size() / 2 리턴
+- 양방향 경로를 저장했기 때문에 set.size() / 2 리턴
