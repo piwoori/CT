@@ -3,7 +3,7 @@
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17680)
 
 ### 분류
-- ArraList
+- ArrayList
 
 ### 문제 요약
 - 캐시 크기(cacheSize)와 도시이름 배열(cities) 매개변수
