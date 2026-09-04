@@ -1,0 +1,94 @@
+# [level1] 중요한 단어를 스포 방지 - 468370
+
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/468370)
+
+### 분류
+- 이차원 배열
+- HashSet
+- ArrayList
+
+### 문제 요약
+- 무지가 당신에게 보내온 메시지를 나타내는 문자열 message와 스포 방지가 적용된 구간을 나타내는 2차원 정수 배열 spoiler_ranges 매개개변수
+  - 1 ≤ message의 길이 ≤ 20,000
+    - message는 알파벳 소문자, 숫자 그리고 공백으로 이루어져 있음
+    - message는 하나 이상의 단어로 구성된 문자열
+    - 공백은 연속해서 등장하지 않음
+  - 1 ≤ spoiler_ranges의 길이 ≤ 1,000
+    - spoiler_ranges[i]는 [start, end] 형태로 스포 방지를 적용한 구간을 나타넴 
+      - 이때 start와 end는 문자 인덱스이며, 두 인덱스 모두 구간에 포함
+    - 0 ≤ start ≤ end < message의 길이
+    - 모든 구간은 서로 겹치지 않으며, start 기준으로 오름차순 정렬되어 주어짐
+- 카카오톡은 메시지의 일부를 가려두었다가, 클릭했을 때만 공개되는 스포 방지 기능을 제공
+- 메시지 시작부터 왼쪽 → 오른쪽 순서로 스포 방지 구간을 하나씩 클릭해 공개되는 단어들 중, 중요한 단어가 몇 개인지 확인
+- 단어 및 중요한 단어 규칙
+  - 단어는 공백으로 구분되며, 알파벳 소문자와 숫자로만 구성된 연속된 문자열
+  - 단어를 구성하는 문자들의 인덱스 중 하나 이상이 스포 방지 구간에 포함될 경우, 해당 단어는 스포일러 방지 단어로 간주
+    - 단어 내 일부 문자에만 스포일러 방지 기능이 적용되더라도, 해당 단어 전체를 스포일러 방지 단어로 간주
+  - 한 단어가 여러 개의 스포 방지 구간에 걸쳐 있을 수 있으며, 하나의 스포 방지 구간에 여러 단어가 포함될 수 있음
+  - 스포 방지 구간을 클릭해 단어의 모든 문자가 공개되었을 때, 그 단어가 아래 조건을 모두 만족하면 중요한 단어
+    - 1. 스포 방지 단어여야 함
+    - 2. 메시지의 스포 방지 구간이 아닌 구간(= 어떤 스포 방지 구간에도 속하지 않는 모든 구간: 각 구간의 앞·사이·뒤 포함)에 등장한 적이 없어야 함
+    - 3. 이전에 공개된 스포 방지 단어와 중복되지 않아야 함
+    - 4. 여러 단어가 동시에 공개된 경우, 왼쪽부터 순서대로 하나씩 중요한 단어인지 판단
+- 스포 방지 단어 중 중요한 단어의 수 리턴
+
+### 풀이 아이디어
+- 클래스 Word 정의
+  - 문자열 변수 text 초기화
+  - 정수 변수 start 초기화
+  - 정수 변수 end 초기화
+  - 아직 해제되지 않은 스포 구간 수를 나타내는 정수 remain 초기화
+  - 스포 단어인지를 나타내는 불리언 변수 spoiler 초기화
+  - text, start, end를 전달받아 객체 필드를 초기화하는 생성자 선언
+- 정수를 반환하고 문자열 message, 이차원 정수 배열 spoiler_ranges를 매개변수로 하는 solution 메소드 정의
+  - List<Word> words를 ArrayList 구현체로 초기화
+  - 각 문자 위치가 몇 번째 단어에 속하는지를 나타내는 정수 배열 wordIndex를 message.length() 크기로 초기화
+  - Arrays.fill(wordIndex, -1) 실행해 -1로 채우기
+  - 단어 분리 위해 정수 배열 start를 0으로 초기화
+  - start < message.length() 조건식을 만족하는 while문 실행
+    - 정수 변수 end를 start로 초기화
+    - end < message.length() && message.charAt(end) != ' ' 조건식을 만족하는 while문 실행
+      - end++ 실행
+    - 문자열 변수 text를 message.substring(start, end)로 초기화
+    - Word 변수 word를 new Word(text, start, end - 1)로 초기화
+    - 정수 변수 idx를 words.size() 초기화
+    - words.add(word) 실행
+    - 정수 변수 i가 start부터 end 전까지 도는 for문 실행
+      - wordIndex[i]에 idx 대입
+    - start에 end + 1 대입
+  - spoiler_ranges[i]가 어떤 단어들과 겹치는지 저장하는 List<List<Integer>> rangeWords를 ArrayList 구현체로 초기화
+  - 정수 변수 i가 0부터 spoiler_ranges.length 전까지 도는 for문 실행
+    - rangeWords.add(new ArrayList<>()) 실행
+  - 각 스포 범위가 어떤 단어에 걸쳐 있는지 확인하기 위해 정수 변수 r이 0부터 spoiler_ranges.length 잔까지 도는 for문 실행
+    - 정수 변수 s를 spoiler_ranges[r][0]로 로기화
+    - 정수 변수 e를 spoiler_ranges[r][1]로 초기화
+    - 정수 변ㅅ prev를 -1로 초기화
+    - 정수 변수 i가 s부터 e까지 도는 for문 실행
+      - 백이면 단어가 아님을 나타내는 wordIndex[i] == -1 조건식 만족 시
+          - continue 실행
+        - 정수 변수 idx를 wordIndex[i]로 초기화
+        - 같은 범위가 같은 단어의 여러 글자에 걸쳐도 한 번만 기록 될 수 있게 idx != prev 조건식 만족 시
+          - rangeWords.get(r).add(idx) 실행
+          - Word word를 words.get(idx)로 초기화
+          - word.spoiler에 true 대입
+          - word.remain++ 실행
+          - prev에 idx 대입
+  - 스포가 전혀 적용되지 않은 영역에 등장하는 단어 저장하기 위해 Set<String> normalWords를 HashSet 구현체로 초기화
+  - Word 변수 word가 words를 도는 for문 실행
+    - !word.spoiler 조건식 만족 시
+      - normalWords.add(word.text) 실행
+    - 이전에 공개된 스포 단어를 나타내기 위해 Set<String> revealed를 HashSet 구현체로 초기화
+    - 정수 변수 answer를 0으로 초기화
+    - 스포 범위를 왼쪽 → 오른쪽으로 해제하기 위해 정수 변수 r을 0부터 spoiler_ranges.length 전까지 도는 for문 실행
+      - List<Integer> opened를 ArrayList 구현체로 초기화
+      - 정수 변수 idx가 rangeWords.get(r)를 도는 for문 실행
+        - Word word에 words.get(idx) 대입
+        - word.remain-- 실행
+        - 이 단어에 걸린 모든 스포가 해제하기 위해 word.remain == 0 조건식 만족 시
+          - opened.add(idx) 실행
+      - 동시에 공개되면 왼쪽부터 정렬하기 위해 Collections.sort(opened) 실행
+      - 정수 변수 idx가 opened를 도는 for문 실행
+        - 문자열 변수 text를 words.get(idx).text로 초기화
+        - !normalWords.contains(text) && !revealed.contains(text) 조건식 만족 시
+          - answer++ 실행
+  - answer 리턴
