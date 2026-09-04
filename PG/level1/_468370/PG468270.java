@@ -1,9 +1,8 @@
-package PG.level1._468371;
+package PG.level1._468370;
 
 import java.util.*;
 
-public class PG468371{
-
+public class PG468270 {
     static class Word{
         String text;
         int start;
@@ -11,14 +10,14 @@ public class PG468371{
         int remain;
         boolean spoiler;
 
-        Word(String text, int start, int end){
+        Word(String text, int start, int end) {
             this.text = text;
             this.start = start;
             this.end = end;
         }
     }
 
-    public int solution(String message, int[][] spoiler_ranges) {
+    public int solution(String message, int[][] spoiler_ranges){
         List<Word> words = new ArrayList<>();
 
         int[] wordIndex = new int[message.length()];
@@ -30,7 +29,7 @@ public class PG468371{
 
             int end = start;
 
-            while(een < message.length() && message.charAt(end) != ' '){
+            while(end < message.length() && message.charAt(end) != ' '){
                 end++;
             }
 
@@ -53,7 +52,7 @@ public class PG468371{
             rangeWords.add(new ArrayList<>());
         }
 
-        for(int r = 0; r < spoiler_ranges; r++){
+        for(int r = 0; r < spoiler_ranges.length; r++){
             int s = spoiler_ranges[r][0];
             int e = spoiler_ranges[r][1];
 
@@ -68,6 +67,8 @@ public class PG468371{
 
                 if(idx != prev){
                     rangeWords.get(r).add(idx);
+
+                    Word word = words.get(idx);
                     word.spoiler = true;
                     word.remain++;
 
@@ -88,7 +89,7 @@ public class PG468371{
 
         int answer = 0;
 
-        for(int r = 0; r < spoiler_ranges.length; r++){
+        for(int r = 0; r <spoiler_ranges.length; r++){
             List<Integer> opened = new ArrayList<>();
 
             for(int idx : rangeWords.get(r)){
