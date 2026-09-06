@@ -18,7 +18,7 @@
 
 # [난이도] 문제 이름 - 문제 번호
 
-[문제 링크](https://www.acmicpc.net/problem/문제번호)
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/문제번호)
 
 ### 분류
 - (예: 브루트포스, 구현, DP, 그래프 이론)
